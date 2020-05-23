@@ -1,0 +1,30 @@
+{
+  "spellright.language": [
+    "en",
+    "pt"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "javascript"
+  ],
+  "git.autofetch": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "prettier.arrowParens": "avoid",
+  "prettier.tabWidth": 2,
+  "eslint.lintTask.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "prettier.bracketSpacing": true,
+  "editor.cursorStyle": "line",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.glyphMargin": true,
+  "editor.autoIndent": "brackets",
+  "editor.suggest.showIssues": true,
+  "editor.stablePeek": true
+}

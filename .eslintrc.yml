@@ -1,0 +1,47 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  jest: true
+extends:
+  - airbnb-base
+  - prettier
+  - eslint:recomment
+  - plugin:node/recommended
+  - plugin:jest/recommended
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  ecmaVersion: 11
+  js: true
+plugins:
+  - jsdoc
+  - promise
+  - jest
+settings:
+  jsdoc:
+    tagNamePreference:
+      file: fileoverview
+      augments: extends
+      class: constructor
+    preferredTypes:
+      object: Object
+rules:
+  promise/always-return: "error"
+  promise/no-return-wrap: "error"
+  promise/param-names: "error"
+  promise/catch-or-return: "error"
+  promise/no-native: "off"
+  promise/no-nesting: "warn"
+  promise/no-promise-in-callback: "warn"
+  promise/no-callback-in-promise: "warn"
+  promise/avoid-new: "warn"
+  promise/no-new-statics: "error"
+  promise/no-return-in-finally: "warn"
+  promise/valid-params: "warn"
+  jest/no-disabled-tests: "warn"
+  jest/no-focused-tests: "error"
+  jest/no-identical-title: "error"
+  jest/prefer-to-have-length: "warn"
+  jest/valid-expect: "error"

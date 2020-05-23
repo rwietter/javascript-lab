@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">TOP</header> <!-- child of body and parent textarea and header -->
+  <textarea name="" id="" cols="30" rows="10">rows</textarea> <!-- child of body and parent textarea and header -->
+  <footer>Bottom</footer> <!-- child of body and parent textarea and header -->
+  <script>
+    let text = 'HELLO'
+    let header = document.querySelector('.header')
+    let headerChild = document.createElement('div') 
+    headerChild.innerText = text // insert text in headerChild child of header
+    header.appendChild(headerChild) // create headerChild of header father
+  </script>
+</body>
+</html>
