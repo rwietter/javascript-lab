@@ -1,0 +1,12 @@
+{
+  "signin": "Sign in",
+  "signinto": "Sign in to",
+  "usernameoremail": "Username or Email Address",
+  "password": "Password",
+  "pleaseemailvalid": "Please, enter a valid email address",
+  "lowpassword": "Password too short (minimum 8 characters)",
+  "stayloggedin": "Remain logged in",
+  "showpass": "Show password",
+  "hidepass": "Hide password",
+  "forgotpassword": "Forgot your password?"
+}

@@ -1,0 +1,5 @@
+{
+    "names_indicators": ["nome: ", "nome completo: ", "name: "],
+    "marital_status": ["solteiro", "casado", "divorciado", "viúvo", "separado","solteira", "casada", "divorciada", "viúva", "separada"],
+    "brazilian_states": ["sp"]
+}

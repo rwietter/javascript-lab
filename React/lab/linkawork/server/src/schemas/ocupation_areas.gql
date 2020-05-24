@@ -1,0 +1,33 @@
+type OcupationArea {
+  id: String
+  name: String
+  description: String
+}
+
+extend type Query {
+  #Get a ocupation areas
+  ocupationAreas(id: ID, limit: Int, offset: Int): [OcupationArea] @pagination
+}
+
+extend type Mutation {
+  #Create a ocuption area
+  createOcupationArea(name: String!, description: String): OcupationArea
+    @auth(name: "create-ocupation-area")
+
+  #Update a ocupation area
+  updateOcupationArea(
+    id: ID!
+    name: String
+    description: String
+  ): OcupationArea @auth(name: "update-ocupation-area")
+
+  #Delete a ocupation area
+  deleteOcupationArea(id: ID!): OcupationArea
+    @auth(name: "delete-ocupation-area")
+
+  #Set user ocupation area
+  createUserOcupationArea(id: ID!): Boolean @auth
+
+  #Remove user ocupation area
+  removeUserOcupationArea(id: ID!): Boolean @auth
+}

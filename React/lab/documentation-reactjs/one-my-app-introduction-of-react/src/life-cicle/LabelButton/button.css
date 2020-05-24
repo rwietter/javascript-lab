@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+.Button {
+  font-family: "Comfortaa";
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.label {
+  font-family: "Comfortaa";
+  font-size: 2rem;
+  margin: 2rem;
+  font-weight: 700;
+}
+.container {
+  position: relative;
+  display: flex;
+  padding-right: 4rem;
+}
+.buttonClass {
+  border: 5px;
+  border-color: brown;
+  border-radius: 5rem;
+}

@@ -1,0 +1,16 @@
+{
+  "signin": "Acessar",
+  "signinto": "Acesse o",
+  "usernameoremail": "Usuário ou email",
+  "password": "Senha",
+  "pleaseemailvalid": "Por favor, digite um email válido",
+  "lowpassword": "Senha muito curta(mínimo 8 caracteres)",
+  "stayloggedin": "Permanecer logado",
+  "showpass": "Ver senha",
+  "hidepass": "Esconder senha",
+  "forgotpassword": "Esqueceu sua senha?",
+  "signup": "Criar conta",
+  "formyself": "Para mim",
+  "formybusiness": "Para minha empresa",
+  "Login with LinkedIn": "Acessar com LinkedIn"
+}

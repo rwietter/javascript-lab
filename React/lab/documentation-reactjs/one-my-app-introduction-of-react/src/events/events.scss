@@ -1,0 +1,14 @@
+.refer {
+  background-color: #ffffff;
+  color: #000000;
+  max-width: max-content;
+  padding: 2rem;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  justify-content: flex;
+  grid-row: span;
+  grid: inherit;
+}

@@ -1,0 +1,23 @@
+type CV{
+    id: ID
+    email: String
+    name: String
+    firstname: String
+    lastname: String
+    birthday: String
+    zipcode: String
+    phone:String
+    years: Int
+    marital_status: String
+    state: String
+}
+
+extend type Mutation{
+    uploadCv(
+        file: Upload!
+    ):CV
+
+    deleteCv(
+        id: ID!
+    ): CV
+}

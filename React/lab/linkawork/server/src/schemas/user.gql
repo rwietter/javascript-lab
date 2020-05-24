@@ -1,0 +1,89 @@
+type User {
+  id: ID
+  firstname: String
+  lastname: String
+  email: String
+  cpf: String
+  cnpj: String
+  phone: String
+  zipcode: Int
+  address: String
+  city: String
+  state: String
+  token: String
+  auths: [String]
+  type: String
+  birthday: Date
+  site: String
+  image: String
+  educational_background: EducationalBackground
+  skills: [UserSkill]
+  languages: [UserLanguage]
+  experiences: [Experience]
+  ocupation_areas: [OcupationArea]
+}
+
+type UserSkill {
+  skill: Skill
+  stars: Int
+}
+
+extend type Mutation {
+  #Create a Linkawork account
+  createAccount(
+    firstname: String!
+    lastname: String!
+    company_name: String
+    cnpj: String
+    company_name: String
+    email: String!
+    password: String!
+    type: String!
+    phone: String
+    zipcode: String
+    birthday: String
+    curriculum: ID
+  ): User
+
+  #Update a user
+  updateAccount(
+    firstname: String
+    lastname: String
+    company_name: String
+    cnpj: String
+    cpf: String
+    company_name: String
+    type: String
+    phone: String
+    zipcode: Int
+    birthday: Date
+    state: String
+    city: String
+    neighborhood: String
+    number: String
+    complement: String
+  ): User
+
+  #Generate a Linkawork token
+  login(email: String!, password: String!): User
+
+  #Destroy a Linkawork token
+  destroyToken: Boolean! @auth
+
+  #add or replace a user languages
+  setUserLanguage(language: ID!, level: Int!): Boolean @auth
+
+  #delete a user languages
+  deleteUserLanguage(language: ID!): Boolean @auth
+
+  #login with linkedin
+  loginWithLinkedIn(code: String!, type: String!): User
+}
+
+extend type Query {
+  #user logged infos
+  me: User @auth
+
+  #search legal users
+  legalUsers(search: String!, limit: Int, offset: Int): [User] @pagination @auth
+}

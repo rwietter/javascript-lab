@@ -1,0 +1,10 @@
+type EducationalBackground{
+    id: ID 
+    description: String,
+    teste: String @deprecated(reason: "Desabilitado na versão 2.0")
+}
+
+extend type Query{
+    educational_backgrounds(id: ID, limit: Int, offset: Int): [EducationalBackground] 
+    @auth @pagination
+}

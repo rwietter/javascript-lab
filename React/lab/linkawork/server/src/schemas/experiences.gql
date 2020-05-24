@@ -1,0 +1,46 @@
+type Experience {
+  id: ID
+  company: User
+  company_name: String
+  position: Position
+  position_name: String
+  description: String
+  initial_date: Date
+  final_date: Date
+  skills: [Skill]
+}
+
+extend type Mutation {
+  #create a user experience
+  createExperience(
+    company: ID
+    company_name: String
+    position: ID
+    position_name: String
+    description: String
+    initial_date: Date!
+    final_date: Date
+  ): Experience @auth
+
+  #update a user experience
+  updateExperience(
+    id: ID!
+    company: ID
+    company_name: String
+    position: ID
+    position_name: String
+    descritption: String
+    initial_date: Date
+    final_date: Date
+  ): Experience @auth
+
+  #delete a user experience
+  deleteExperience(id: ID!): Boolean @auth
+
+  #set a experience skill
+  setExperienceSkill(experience: ID!, skill: ID!, description: String): Boolean
+    @auth
+
+  #delete a experience skill
+  deleteExperienceSkill(experience: ID!, skill: ID!): Boolean @auth
+}

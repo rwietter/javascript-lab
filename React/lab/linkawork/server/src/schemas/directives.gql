@@ -1,0 +1,9 @@
+directive @auth(name: String) on FIELD_DEFINITION
+directive @upper on FIELD_DEFINITION
+directive @date(format: String) on FIELD_DEFINITION
+directive @deprecated(
+  reason: String = "No longer supported"
+) on FIELD_DEFINITION | ENUM_VALUE
+directive @pagination on FIELD_DEFINITION
+
+scalar Date
