@@ -1,10 +1,10 @@
 {
-  "name": "Eloquent",
+  "name": "js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    
+    "remove": "^0.1.5"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -20,8 +20,7 @@
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
-    "remove": "^0.1.5"
+    "stylelint-order": "^4.0.0"
   },
   "scripts": {
     "test": "jest"
