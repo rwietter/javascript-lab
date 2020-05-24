@@ -1,9 +1,0 @@
-type File {
-  id: ID
-  url: String
-  alt: String
-}
-
-extend type Mutation {
-  imageUpload(image: Upload!, type: String, alt: String): File
-}
