@@ -6,8 +6,7 @@
   "spellright.documentTypes": [
     "markdown",
     "latex",
-    "plaintext",
-    "javascript"
+    "plaintext"
   ],
   "git.autofetch": true,
   "eslint.enable": true,
