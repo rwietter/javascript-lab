@@ -1,5 +1,5 @@
-let square = number => number * number;
-console.log(square(2, 5, 8, 'wtf')); // 4
+let square = (number) => number * number;
+console.log(square(2, 5, 8, "wtf")); // 4
 
 /**
 * @param {
@@ -11,12 +11,12 @@ console.log(square(2, 5, 8, 'wtf')); // 4
 
 let multiply = (x, y) => {
   if (y === undefined) {
-    console.log(typeof(y));
+    console.log(typeof y);
   } else {
     return x * y;
   }
-}
-multiply(1) // undefined
+};
+multiply(1); // undefined
 console.log(multiply(2, 5)); // 10
 
 /**
@@ -25,16 +25,15 @@ console.log(multiply(2, 5)); // 10
 } multiply 
 */
 
-
 // **********************************************************
 
 let multiplyDefaultValue = (x, y = 1e2) => {
   if (y === undefined) {
-    console.log(typeof(y));
+    console.log(typeof y);
   } else {
     return x * y;
   }
-}
+};
 console.log(multiplyDefaultValue(7)); // 700
 console.log(multiplyDefaultValue(2, 99)); // 198
 

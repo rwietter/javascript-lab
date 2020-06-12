@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({
       node,
-      getNode
+      getNode,
     });
     const fileNode = getNode(node.parent);
     const source = fileNode.sourceInstanceName;
@@ -19,18 +19,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: `slug`,
-        value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`
+        value: `${separtorIndex ? "/" : ""}${slug.substring(shortSlugStart)}`,
       });
     }
     createNodeField({
       node,
       name: `prefix`,
-      value: separtorIndex ? slug.substring(1, separtorIndex) : ""
+      value: separtorIndex ? slug.substring(1, separtorIndex) : "",
     });
     createNodeField({
       node,
       name: `source`,
-      value: source
+      value: source,
     });
   }
 };
@@ -67,7 +67,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         `
-      ).then(result => {
+      ).then((result) => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
@@ -77,32 +77,34 @@ exports.createPages = ({ graphql, actions }) => {
 
         /* Cria um lista de tags */
         const tagSet = new Set();
-        items.forEach(edge => {
+        items.forEach((edge) => {
           const {
             node: {
-              frontmatter: { tags }
-            }
+              frontmatter: { tags },
+            },
           } = edge;
 
           if (tags && tags !== null) {
-            tags.forEach(tag => tagSet.add(tag));
+            tags.forEach((tag) => tagSet.add(tag));
           }
         });
 
         /* Cria as páginas de tag */
         const tagList = Array.from(tagSet);
-        tagList.forEach(tag => {
+        tagList.forEach((tag) => {
           createPage({
             path: `/tag/${_.kebabCase(tag)}/`,
             component: tagTemplate,
             context: {
-              tag
-            }
+              tag,
+            },
           });
         });
 
         /* Cria a página de posts */
-        const posts = items.filter(item => item.node.fields.source === "posts");
+        const posts = items.filter(
+          (item) => item.node.fields.source === "posts"
+        );
         posts.forEach(({ node }, index) => {
           const { slug, source } = node.fields;
           createPage({
@@ -110,8 +112,8 @@ exports.createPages = ({ graphql, actions }) => {
             component: postTemplate,
             context: {
               slug,
-              source
-            }
+              source,
+            },
           });
         });
       })

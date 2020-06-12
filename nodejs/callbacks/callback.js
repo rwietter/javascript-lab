@@ -7,11 +7,11 @@
 */
 
 function obterUsuario(callback) {
-  setTimeout(function() {
+  setTimeout(function () {
     return callback(null, {
       id: 1,
       nome: "Aladin",
-      dataNascimento: new Date()
+      dataNascimento: new Date(),
     });
   }, 1000);
 }
@@ -21,7 +21,7 @@ function obterTelefone(idUsuario, callback) {
   setTimeout(() => {
     return callback(null, {
       numero: 99674634,
-      ddd: 33
+      ddd: 33,
     });
   }, 2000);
 }
@@ -32,7 +32,7 @@ function obterEndereco(idUsuario, callback) {
       rua: "Sao joao",
       numero: 1456,
       uf: "RS",
-      cidade: "Cartolina"
+      cidade: "Cartolina",
     });
   }, 2000);
 }

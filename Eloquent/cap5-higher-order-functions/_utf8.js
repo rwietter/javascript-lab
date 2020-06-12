@@ -1,4 +1,4 @@
-let roseDragon = '🌹🐉';
+let roseDragon = "🌹🐉";
 
 // cada caracter unicode ocupa dois endereços
 console.log(roseDragon.charCodeAt(0));

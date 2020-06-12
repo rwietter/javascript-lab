@@ -1,7 +1,7 @@
-let name = 'harry';
-let text = 'Harry is a suspicious character';
-let regexp = new RegExp(`\\b(${name})\\b`, 'gi');
-console.log(text.replace(regexp, '_$1_'));
+let name = "harry";
+let text = "Harry is a suspicious character";
+let regexp = new RegExp(`\\b(${name})\\b`, "gi");
+console.log(text.replace(regexp, "_$1_"));
 
 /*
  Ao criar os marcadores \b de limite, precisamos usar duas
@@ -13,9 +13,9 @@ console.log(text.replace(regexp, '_$1_'));
 */
 
 // com caracteres
-name = 'dea+hl[]rd';
-text = 'This dea+hl[]rd guy is super annoying.';
-let escaped = name.replace(/[\\[.+*?(){|^$]/g, '\\$&');
-regexp = new RegExp(`\\b${escaped}\\b`, 'gi');
-let repleced = text.replace(regexp, ' _$&_ ');
+name = "dea+hl[]rd";
+text = "This dea+hl[]rd guy is super annoying.";
+let escaped = name.replace(/[\\[.+*?(){|^$]/g, "\\$&");
+regexp = new RegExp(`\\b${escaped}\\b`, "gi");
+let repleced = text.replace(regexp, " _$&_ ");
 console.log(repleced);

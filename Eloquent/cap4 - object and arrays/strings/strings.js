@@ -30,9 +30,9 @@ ${jupiter.padStart(17, `Gas Giant `)}`
 // padStart => adciona um padding no ínicio com qualquer outro valor
 
 let cite = `Você por acaso já questionou a natureza da sua realidade?`;
-let citeSplit = cite.split(' ');
+let citeSplit = cite.split(" ");
 console.log(citeSplit);
-let citeJoin = citeSplit.join(' ');
+let citeJoin = citeSplit.join(" ");
 console.log(citeJoin);
 
 // Split => corta a string em pedaços definidos e retorna um array de strings

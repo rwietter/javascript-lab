@@ -3,18 +3,18 @@ function speak(line) {
 }
 
 let whiteRabbit = {
-  type: 'white',
+  type: "white",
   speak,
 };
 
 let hungryRabbit = {
-  type: 'hungry',
+  type: "hungry",
   speak,
 };
 
 whiteRabbit.speak('Oh my ears and whiskers, how late it"s getting!');
 hungryRabbit.speak(`I could use a carrot right now.`);
-speak.call(whiteRabbit, 'Burp!');
+speak.call(whiteRabbit, "Burp!");
 
 // --------------------
 

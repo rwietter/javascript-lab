@@ -1,4 +1,4 @@
-const { rangeToArray, sumArray } = require('../range-array');
+const { rangeToArray, sumArray } = require("../range-array");
 
 test(`O resultado deveria dar um array de 1 a 10`, () => {
   expect(rangeToArray(1, 10)).toEqual(

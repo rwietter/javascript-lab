@@ -4,7 +4,7 @@ class ArgsEvents extends Component {
   render() {
     return (
       <div>
-        <button onClick={e => this.deleteRow(id, e)}>Deletar linha</button>
+        <button onClick={(e) => this.deleteRow(id, e)}>Deletar linha</button>
         <button onClick={this.deleteRow.bind(this, id)}>Deletar linha</button>
       </div>
     );

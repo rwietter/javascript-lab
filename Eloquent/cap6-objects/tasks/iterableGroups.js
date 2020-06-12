@@ -44,7 +44,7 @@ class GroupIterator {
 }
 
 // tornar a class anterior iterável
-for (let value of Group.from(['a', 'b', 'c'])) {
+for (let value of Group.from(["a", "b", "c"])) {
   console.log(value);
 }
 // → a

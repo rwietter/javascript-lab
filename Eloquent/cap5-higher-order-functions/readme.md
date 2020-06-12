@@ -4,22 +4,22 @@
 
 ### ---------- Higher Order Functions ----------
 
-- __São funções que operam sobre outras funções. seja tomando-as como argumentos ou devolvendo-as, são chamadas de funções de ordem superior.__
+- **São funções que operam sobre outras funções. seja tomando-as como argumentos ou devolvendo-as, são chamadas de funções de ordem superior.**
 
-- __Funções de ordem superior são funções que aceitam outra função como argumento, retornam outra função como resultado, ou ambas.__
+- **Funções de ordem superior são funções que aceitam outra função como argumento, retornam outra função como resultado, ou ambas.**
 
-- __Um dos principais benefícios das funções de ordem superior é que elas nos permitem personalizar a maneira como chamamos nossas funções.__
+- **Um dos principais benefícios das funções de ordem superior é que elas nos permitem personalizar a maneira como chamamos nossas funções.**
 
 ```javascript
 // sem higher order function
-const multiply = (a , b) => {
+const multiply = (a, b) => {
   return a * b;
-}
+};
 
 // estamos repetindo o 2
-multiply(2,3)
-multiply(2,4)
-multiply(2,5)
+multiply(2, 3);
+multiply(2, 4);
+multiply(2, 5);
 
 // utilizando Higher Order Functions
 const multiply = (m) => {
@@ -74,53 +74,51 @@ console.log(great(3, 2, 1));
 ---
 
 ```js
-['A', 'B'].forEach((l) => console.log(l));
+["A", "B"].forEach((l) => console.log(l));
 ```
 
 ### ---------- Closures ----------
 
-1. __Funções podem ser atribuídas a variáveis__
-2. __Funções podem ser passadas como argumentos para outras funções__
-3. __Funções podem retornar outras funções__
+1. **Funções podem ser atribuídas a variáveis**
+2. **Funções podem ser passadas como argumentos para outras funções**
+3. **Funções podem retornar outras funções**
 
 ```javascript
 // functions can be assigned to variables
 const morningGreetings = (name) => {
   console.log(`Good morning ${name}`);
-}
+};
 
 const eveningGreeting = function (name) {
   console.log(`Good evening ${name}`);
-}
-
+};
 
 // functions can be passed as arguments to other functions
 const todaysGreeting = (morningGreetings, eveningGreeting) => {
-  morningGreetings('Barack')
+  morningGreetings("Barack");
   console.log(`Thanks for all you have done during the day`);
-  eveningGreeting('Barack');
-}
-
+  eveningGreeting("Barack");
+};
 
 // functions can return other functions
-function myCounter ()  {
-  let count = 0
+function myCounter() {
+  let count = 0;
   return function () {
     return ++count;
-  }
+  };
 }
 
 const noOfTimes = myCounter();
 console.log(noOfTimes()); // 1
 ```
 
-- __Uma Closure é uma referência a uma variável declarada no escopo de outra função que é mantida ativa, retornando uma nova função a partir da invocação da função existente.__
+- **Uma Closure é uma referência a uma variável declarada no escopo de outra função que é mantida ativa, retornando uma nova função a partir da invocação da função existente.**
 
 ```javascript
 function outerScope(a) {
-  const outside = 'i am outside';
+  const outside = "i am outside";
   return function innerScope(b) {
-    const inside = 'i am inside';
+    const inside = "i am inside";
     console.log(`innerScope ➡ ${inside}: ${a + b}`);
     console.log(`outerScope ➡ ${outside}: ${a + b}`);
   };
@@ -134,11 +132,11 @@ inner(2); // innerScope ➡ i am inside: 5 // outerScope ➡ i am outside: 5
 
 ```javascript
 function closure(a) {
-  return function trapB (b) {
+  return function trapB(b) {
     return function trapC(c) {
       return c * a + b;
-    }
-  }
+    };
+  };
 }
 
 const oneEight = closure(1.8);
@@ -149,15 +147,15 @@ console.log(degreeToFahrenheit); // 86
 
 ### ---------- Curryng ----------
 
-- __Currying é um processo que envolve a aplicação parcial das funções.__
+- **Currying é um processo que envolve a aplicação parcial das funções.**
 
-- __Uma função é currying quando todos os argumentos necessários para sua invocação não foram fornecidos. Neste caso, ela retornará outra função que mantém os argumentos já fornecidos e espera que o argumento omitido seja fornecido antes de invocar a função.__
+- **Uma função é currying quando todos os argumentos necessários para sua invocação não foram fornecidos. Neste caso, ela retornará outra função que mantém os argumentos já fornecidos e espera que o argumento omitido seja fornecido antes de invocar a função.**
 
-- __A função só é invocada quando todos os argumentos foram fornecidos. Caso contrário, uma nova função é devolvida que retém argumentos existentes e aceita novos argumentos também.__
+- **A função só é invocada quando todos os argumentos foram fornecidos. Caso contrário, uma nova função é devolvida que retém argumentos existentes e aceita novos argumentos também.**
 
-- __Quando você seleciona uma função, você a chama de `f(a)(b)(c)(d)` em vez de `f(a, b, c, d)`. Por extensão, todas as funções com currying são funções de ordem superior, mas nem todas as funções de ordem superior são curried.__
+- **Quando você seleciona uma função, você a chama de `f(a)(b)(c)(d)` em vez de `f(a, b, c, d)`. Por extensão, todas as funções com currying são funções de ordem superior, mas nem todas as funções de ordem superior são curried.**
 
-- __currying nos permite transformar uma única função em uma série de funções.__
+- **currying nos permite transformar uma única função em uma série de funções.**
 
 ```javascript
 const curriedSum = (a, b) => {
@@ -200,6 +198,6 @@ console.log(discount(400));
 
 ## Closure Vs Currying
 
-__Aparentemente, closure e currying parecem ser a mesma coisa. No entanto, são conceitos diferentes, uma closure é uma forma usada para pegar a referência de uma função interna, isto é, um método privado como no paradigma orientado a objetos, ela pode retornar uma função para uma variável ou não, isso a torna apenas uma Higher Order Function.__
+**Aparentemente, closure e currying parecem ser a mesma coisa. No entanto, são conceitos diferentes, uma closure é uma forma usada para pegar a referência de uma função interna, isto é, um método privado como no paradigma orientado a objetos, ela pode retornar uma função para uma variável ou não, isso a torna apenas uma Higher Order Function.**
 
-__No caso da currying, ela obrigatoriamente precisa retornar uma função, isto é, a currying converte uma única função de n argumentos em n funções com um único argumento cada.__
+**No caso da currying, ela obrigatoriamente precisa retornar uma função, isto é, a currying converte uma única função de n argumentos em n funções com um único argumento cada.**

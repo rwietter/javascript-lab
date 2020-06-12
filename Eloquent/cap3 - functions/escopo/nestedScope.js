@@ -1,10 +1,10 @@
 /*
-* O código mais interno pode ver o externo e o global mas,
-* o escopo externo e o global não pode ver o interno.
-*/
+ * O código mais interno pode ver o externo e o global mas,
+ * o escopo externo e o global não pode ver o interno.
+ */
 
 const hummus = function (factor) {
-  const ingredient = function(amount, unit, name) {
+  const ingredient = function (amount, unit, name) {
     let ingredientAmount = amount * factor;
     if (ingredientAmount > 1) {
       unit += "s";
@@ -18,4 +18,4 @@ const hummus = function (factor) {
   ingredient(2, "tablespoon", "olive oil");
   ingredient(0.5, "teaspoon", "cumin");
 };
-hummus(1)
+hummus(1);

@@ -37,20 +37,20 @@
   }
 }
 .li {
-    display: flex;
-    align-self: flex-start;
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    color: #789;
-    text-align: justify;
+  display: flex;
+  align-self: flex-start;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #789;
+  text-align: justify;
 }
 .li:hover {
-color: #000;
+  color: #000;
 }
 .ul {
-align-self: center;
+  align-self: center;
 }
 ul > button {
-align-self: center;
+  align-self: center;
 }

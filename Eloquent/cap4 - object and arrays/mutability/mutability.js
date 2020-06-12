@@ -5,8 +5,8 @@
 /* Números, strings e booleanos são todos imutáveis
  * Objetos funcionam de forma diferente. Você pode alterar suas propriedades */
 
-let str = 'cat';
-console.log((str[0] = 'r'), str); // r, cat
+let str = "cat";
+console.log((str[0] = "r"), str); // r, cat
 
 let object1 = { value: 10 };
 let object2 = object1; // aponta para o objeto 1

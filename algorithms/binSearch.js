@@ -1,15 +1,15 @@
 function array() {
   let arr = Array(10);
-  for (let i = 0; i < arr.length; i++){
-    arr[i] = (Math.floor((Math.random() * 100) + 1))
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = Math.floor(Math.random() * 100 + 1);
   }
   const size = arr.length;
   selectSort(arr, size);
 }
 
 function insertSort(arr, size) {
-  let [i, j, key] = [0, 0, 0]
-  while(i < size){
+  let [i, j, key] = [0, 0, 0];
+  while (i < size) {
     key = arr[i];
     j = i - 1;
     while (j >= 0 && arr[j] > key) {
@@ -25,9 +25,9 @@ function insertSort(arr, size) {
 
 function selectSort(arr, size) {
   let [i, j, aux, minIndex] = [0, 0, 0, 0];
-  for (i = 0; i < size - 1; i++){
+  for (i = 0; i < size - 1; i++) {
     minIndex = i;
-    for (j = i; j < size; j++){
+    for (j = i; j < size; j++) {
       if (arr[j] < arr[minIndex]) {
         minIndex = j;
       }
@@ -41,14 +41,14 @@ function selectSort(arr, size) {
 }
 
 function binSearch(arr, left, right, value) {
-  debugger
+  debugger;
   if (right >= left) {
-    const index = parseInt(left + (right - left) / 2) // divide o arr ao meio
+    const index = parseInt(left + (right - left) / 2); // divide o arr ao meio
     if (arr[index] === value) {
       return value;
     }
     if (arr[index] > value) {
-      return binSearch(arr, left, index - 1, value)
+      return binSearch(arr, left, index - 1, value);
     }
     return binSearch(arr, index + 1, right, value);
   }

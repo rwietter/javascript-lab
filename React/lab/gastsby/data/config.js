@@ -8,7 +8,7 @@ const config = {
   googleAnalyticsID: "**-********-*",
   themeColor: "#000000",
   backgroundColor: "#F2F3F4",
-  siteUrl: "https://codestackbrasil.netlify.com"
+  siteUrl: "https://codestackbrasil.netlify.com",
 };
 
 module.exports = config;

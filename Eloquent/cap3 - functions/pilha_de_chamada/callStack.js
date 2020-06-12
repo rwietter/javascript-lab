@@ -6,8 +6,8 @@
 */
 
 let getWho = (who) => console.log(who);
-getWho('Gabe');
-console.log('Vintage Culture');
+getWho("Gabe");
+console.log("Vintage Culture");
 
 // ----- loop stack overflow
 function chicken() {

@@ -6,7 +6,7 @@ function sum(tot, count) {
     }
     return total;
   }
-  return range(tot, count)
+  return range(tot, count);
 }
 
 console.log(sum(0, 1));

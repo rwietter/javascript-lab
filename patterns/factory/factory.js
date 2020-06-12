@@ -2,6 +2,6 @@ const factoryFun = (name) => ({
   name,
   getName: () => name,
 });
-const factory = factoryFun('Mars');
+const factory = factoryFun("Mars");
 
 console.log(factory.getName());

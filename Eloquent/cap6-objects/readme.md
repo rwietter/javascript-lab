@@ -30,12 +30,12 @@ function speak(line) {
 }
 
 let whiteRabbit = {
-  type: 'white',
+  type: "white",
   speak,
 };
 
 let hungryRabbit = {
-  type: 'hungry',
+  type: "hungry",
   speak,
 };
 
@@ -114,7 +114,7 @@ Rabbit.prototype.speak = function (line) {
   console.log(`The ${this.type} rabbit says '${line}'`);
 };
 
-let weirdRabbit = new Rabbit('weird');
+let weirdRabbit = new Rabbit("weird");
 ```
 
 ---
@@ -133,8 +133,8 @@ class Rabbit {
   }
 }
 
-let killerRabbit = new Rabbit('killer');
-let blackRabbit = new Rabbit('black');
+let killerRabbit = new Rabbit("killer");
+let blackRabbit = new Rabbit("black");
 ```
 
 ---
@@ -144,10 +144,10 @@ let blackRabbit = new Rabbit('black');
 **Quando adicionamos uma propriedade a um objeto, esteja presente no protótipo ou não, a propriedade é adicionada ao próprio objeto. Se já havia uma propriedade com o mesmo nome no protótipo, essa propriedade não afetará mais o objeto, pois agora está oculta atrás da propriedade do próprio objeto.**
 
 ```javascript
-Rabbit.prototype.teeth = 'small';
+Rabbit.prototype.teeth = "small";
 console.log(killerRabbit.teeth);
 // → small
-killerRabbit.teeth = 'long, sharp, and bloody';
+killerRabbit.teeth = "long, sharp, and bloody";
 console.log(killerRabbit.teeth);
 // → long, sharp, and bloody
 console.log(blackRabbit.teeth);
@@ -171,22 +171,22 @@ let ages = {
   Júlia: 62,
 };
 
-console.log(`Júlia is ${ages['Júlia']}`); // → Júlia is 62
-console.log("Is Jack's age known?", 'Jack' in ages); // → Is Jack's age known? false
-console.log("Is toString's age known?", 'toString' in ages); // → Is toString's age known? true
+console.log(`Júlia is ${ages["Júlia"]}`); // → Júlia is 62
+console.log("Is Jack's age known?", "Jack" in ages); // → Is Jack's age known? false
+console.log("Is toString's age known?", "toString" in ages); // → Is toString's age known? true
 ```
 
 **Os métodos set, get e has desse caso são internos ao Map()**
 
 ```javascript
 let ages = new Map();
-ages.set('Boris', 39);
-ages.set('Liang', 22);
-ages.set('Júlia', 62);
+ages.set("Boris", 39);
+ages.set("Liang", 22);
+ages.set("Júlia", 62);
 
-console.log(`Júlia is ${ages.get('Júlia')}`); // → Júlia is 62
-console.log("Is Jack's age known?", ages.has('Jack')); // → Is Jack's age known? false
-console.log(ages.has('toString')); // → false
+console.log(`Júlia is ${ages.get("Júlia")}`); // → Júlia is 62
+console.log("Is Jack's age known?", ages.has("Jack")); // → Is Jack's age known? false
+console.log(ages.has("toString")); // → false
 ```
 
 ---
@@ -212,8 +212,8 @@ console.log(String(blackRabbit)); // → a black rabbit
 **Os Symbols são únicos, ou seja, não da para criar dois ou mais iguais:**
 
 ```javascript
-let sym = Symbol('name');
-console.log(sym == Symbol('name')); // → false
+let sym = Symbol("name");
+console.log(sym == Symbol("name")); // → false
 Rabbit.prototype[sym] = 55;
 console.log(blackRabbit[sym]); // → 55
 ```
@@ -223,7 +223,7 @@ console.log(blackRabbit[sym]); // → 55
 ```javascript
 let stringObject = {
   [toStringSymbol]() {
-    return 'a jute rope';
+    return "a jute rope";
   },
 };
 console.log(stringObject[toStringSymbol]()); // → a jute rope

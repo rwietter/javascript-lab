@@ -7,7 +7,7 @@ export default ({ title, description, url, article }) => {
     title: title ? `${title} | ${config.siteTitle}` : config.siteTitle,
     description: description || config.siteDescription,
     image: config.siteImage,
-    url: url ? `${config.siteUrl}${url}` : ""
+    url: url ? `${config.siteUrl}${url}` : "",
   };
 
   return (

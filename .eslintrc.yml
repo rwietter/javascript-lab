@@ -6,7 +6,7 @@ env:
 extends:
   - airbnb-base
   - prettier
-  - eslint:recomment
+  - eslint-config-prettier
   - plugin:node/recommended
   - plugin:jest/recommended
 globals:

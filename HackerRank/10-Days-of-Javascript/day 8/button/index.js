@@ -7,9 +7,9 @@ function countButton(button) {
 }
 
 function createButton() {
-  const button = document.createElement('button');
-  button.innerHTML = '0';
-  button.id = 'btn';
+  const button = document.createElement("button");
+  button.innerHTML = "0";
+  button.id = "btn";
   document.body.appendChild(button);
   countButton(button);
 }

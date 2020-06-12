@@ -32,12 +32,12 @@ const slice = (x, y) => {
   return todo.slice(x, y);
 };
 
-remeber('Coffe');
-remeber('Study');
-remeber('Work');
-remeber('Launch');
-remeber('break');
-remeberUrgently('New');
+remeber("Coffe");
+remeber("Study");
+remeber("Work");
+remeber("Launch");
+remeber("break");
+remeberUrgently("New");
 console.log(getTodo()); // [ 'New', 'Coffe', 'Study', 'Work', 'Launch', 'break' ]
 
 shiftInitial();
@@ -46,9 +46,9 @@ console.log(getTodo()); // [ 'Coffe', 'Study', 'Work', 'Launch', 'break' ]
 removeTask();
 console.log(getTodo()); // [ 'Coffe', 'Study', 'Work', 'Launch' ]
 
-console.log(indexOf('Coffe')); // 0 : returna o index de onde se encontra o valor a partir do primeiro index.
+console.log(indexOf("Coffe")); // 0 : returna o index de onde se encontra o valor a partir do primeiro index.
 
-console.log(lastIndexOf('Work')); // 1 : returna o index de onde se encontra o valor a partir do último index.
+console.log(lastIndexOf("Work")); // 1 : returna o index de onde se encontra o valor a partir do último index.
 
 console.log(slice(1, 3)); // retorn os valores do array nos índice específicados:  >= x < y or >= x
 

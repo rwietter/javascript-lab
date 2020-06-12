@@ -21,4 +21,4 @@ console.log(great(3, 2, 1));
 
 // -----------------------------------
 
-['A', 'B'].forEach((l) => console.log(l));
+["A", "B"].forEach((l) => console.log(l));

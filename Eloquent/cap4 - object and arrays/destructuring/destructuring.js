@@ -1,14 +1,14 @@
-let person = ['Julius', 'Elon', 'Carla'];
+let person = ["Julius", "Elon", "Carla"];
 let [, , getPerson] = person;
 console.log(getPerson);
 
 let solarSystem = {
-  star: 'Sun',
+  star: "Sun",
   planet: {
-    mercury: 'mercury',
-    venus: 'venus',
-    earth: 'earth',
-    mars: 'mars',
+    mercury: "mercury",
+    venus: "venus",
+    earth: "earth",
+    mars: "mars",
   },
 };
 

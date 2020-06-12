@@ -8,8 +8,8 @@ class Toogle extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    this.setState(state => ({
-      isToogleOn: !state.isToogleOn
+    this.setState((state) => ({
+      isToogleOn: !state.isToogleOn,
     }));
   }
   render() {

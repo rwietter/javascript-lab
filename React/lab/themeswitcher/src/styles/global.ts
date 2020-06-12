@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     * {
         margin: 0;
@@ -8,9 +8,9 @@ export default createGlobalStyle`
     body {
         width: 100%;
         height: 100%;
-        /* background: ${props => props.theme.colors.background}; */
+        /* background: ${(props) => props.theme.colors.background}; */
         font-size: 14px;
         color: #333;
         font-family: sans-serif;
     }
-`
+`;

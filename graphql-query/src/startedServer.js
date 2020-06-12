@@ -1,9 +1,9 @@
-import { ApolloServer } from 'apollo-server';
-import mongoose from 'mongoose';
+import { ApolloServer } from "apollo-server";
+import mongoose from "mongoose";
 
 export default async function startServer({ typeDefs, resolvers }) {
   const uri =
-    'mongodb+srv://euiciowr:mo5rU2sHgZV6yNc0@cluster0-yjhux.mongodb.net/week10?retryWrites=true&w=majority';
+    "mongodb+srv://euiciowr:mo5rU2sHgZV6yNc0@cluster0-yjhux.mongodb.net/week10?retryWrites=true&w=majority";
   try {
     mongoose.connect(uri, {
       useNewUrlParser: true,

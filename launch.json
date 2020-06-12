@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
-  "configurations": [{
+  "configurations": [
+    {
       "type": "devtools-for-chrome",
       "request": "launch",
       "name": "Launch Chrome DevTools",

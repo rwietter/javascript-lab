@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-  body{
-    background-color: #950ea1;
-  }
-  section{
-    width: 20rem;
-    min-height: 10rem;
-    position: relative;
-    text-align: center;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-  }
-</style>
-<body>
-  <section class="resultado">
-    <h1>map array of objects</h1>
-    <div >
-
-    </div>
-    <!---->
-  </section>
-   <script>
-    let objectList = [
-        { tag: 'p', text: 'ECMAScript ' },
-        { tag: 'div', text: 'HTML ' },
-        { tag: 'footer', text: 'CSS ' },
-        { tag: 'h3', text: 'TDD ' }
-      ]
-    const container = document.querySelector(".resultado") // seleciona a section resultado
-    const createDiv = document.createElement('div') // cria uma div dentro da section
-
-    for (let i = 0; i < objectList.length; i++) {
-      let { tag, text } = objectList[i] // desestrutura a lista de objetos
-      
-      let createElement = document.createElement(tag) // cria uma tag da lista de objetos a cada laço
-      createElement.innerText = text // insere o texto da lista de objetos na tag
-      createDiv.appendChild(createElement) // cria um filho com a tag e o texto
-
-      // outra forma melhor para inserção de textos
-      let nodeText = document.createTextNode(text) // insere o texto como um node text
-      createElement.appendChild(nodeText) // cria um filho com o texto da lista e a tag
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #950ea1;
     }
-    container.appendChild(createDiv) // por fim, cria uma div dentro do container section
-    // container > div > p > div > footer > h3
-    // container > createDiv > tags > container > createDiv
-  </script>
-</body>
+    section {
+      width: 20rem;
+      min-height: 10rem;
+      position: relative;
+      text-align: center;
+      border-radius: 15px;
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+  <body>
+    <section class="resultado">
+      <h1>map array of objects</h1>
+      <div></div>
+      <!---->
+    </section>
+    <script>
+      let objectList = [
+        { tag: "p", text: "ECMAScript " },
+        { tag: "div", text: "HTML " },
+        { tag: "footer", text: "CSS " },
+        { tag: "h3", text: "TDD " },
+      ];
+      const container = document.querySelector(".resultado"); // seleciona a section resultado
+      const createDiv = document.createElement("div"); // cria uma div dentro da section
+
+      for (let i = 0; i < objectList.length; i++) {
+        let { tag, text } = objectList[i]; // desestrutura a lista de objetos
+
+        let createElement = document.createElement(tag); // cria uma tag da lista de objetos a cada laço
+        createElement.innerText = text; // insere o texto da lista de objetos na tag
+        createDiv.appendChild(createElement); // cria um filho com a tag e o texto
+
+        // outra forma melhor para inserção de textos
+        let nodeText = document.createTextNode(text); // insere o texto como um node text
+        createElement.appendChild(nodeText); // cria um filho com o texto da lista e a tag
+      }
+      container.appendChild(createDiv); // por fim, cria uma div dentro do container section
+      // container > div > p > div > footer > h3
+      // container > createDiv > tags > container > createDiv
+    </script>
+  </body>
 </html>

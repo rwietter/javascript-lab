@@ -59,19 +59,19 @@ If you see `Bravo! Good job!`, that means yes!
 
 Now you've solved your first task! Go get more and have fun!
 
-
 ---
 
-StatusCode        : 200
+StatusCode : 200
 StatusDescription : OK
-Content           : {72, 69, 76, 76...}
-RawContent        : HTTP/1.1 200 OK
-                    Connection: keep-alive
-                    Content-Length: 11
-                    Date: Fri, 10 Apr 2020 16:10:55 GMT
-                    X-Powered-By: Express
+Content : {72, 69, 76, 76...}
+RawContent : HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 11
+Date: Fri, 10 Apr 2020 16:10:55 GMT
+X-Powered-By: Express
 
                     HELLO WORLD
-Headers           : {[Connection, keep-alive], [Content-Length, 11], [Date, Fri, 10 Apr 2020 16:10:55 GMT],
-                    [X-Powered-By, Express]}
-RawContentLength  : 11
+
+Headers : {[Connection, keep-alive], [Content-Length, 11], [Date, Fri, 10 Apr 2020 16:10:55 GMT],
+[X-Powered-By, Express]}
+RawContentLength : 11

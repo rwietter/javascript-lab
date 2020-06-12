@@ -1,14 +1,14 @@
-const dotenv = require('dotenv');
-const express = require('express');
+const dotenv = require("dotenv");
+const express = require("express");
 
 dotenv.config();
 
 function startServer() {
   const app = express();
 
-  app.use('/hello', (req, res) => {
-    res.end('REAL WORLD');
-  })
+  app.use("/hello", (req, res) => {
+    res.end("REAL WORLD");
+  });
 
   const port = process.env.PORT;
   app.listen(port, () => {

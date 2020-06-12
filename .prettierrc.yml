@@ -1,0 +1,19 @@
+trailingComma: "es5"
+tabWidth: 2
+semi: true
+singleQuote: true
+arrowParens: always
+endOfLine: crlf
+bracketSpacing: true
+cursorOffset: -1
+htmlWhitespaceSensitivity: strict
+insertPragma: false
+jsxSingleQuote: false
+parser: babel
+plugins:
+  - prettier-plugin-organize-imports
+printWidth: 80
+useTabs: true
+quoteProps: consistent
+rangeStart: 0
+jsxBracketSameLine: false

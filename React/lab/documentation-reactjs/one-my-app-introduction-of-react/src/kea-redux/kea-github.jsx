@@ -9,9 +9,9 @@ const API_URL = "https://api.github.com";
 
 @kea({
   actions: () => ({
-    setUsername: username => ({ username }),
-    setRepositories: repositories => ({ repositories }),
-    setFetchError: message => ({ message })
+    setUsername: (username) => ({ username }),
+    setRepositories: (repositories) => ({ repositories }),
+    setFetchError: (message) => ({ message }),
   }),
 
   reducers: ({ actions }) => ({
@@ -19,16 +19,16 @@ const API_URL = "https://api.github.com";
       "keajs",
       PropTypes.string,
       {
-        [actions.setUsername]: (_, payload) => payload.username
-      }
+        [actions.setUsername]: (_, payload) => payload.username,
+      },
     ],
     repositories: [
       [],
       PropTypes.array,
       {
         [actions.setUsername]: () => [],
-        [actions.setRepositories]: (_, payload) => payload.repositories
-      }
+        [actions.setRepositories]: (_, payload) => payload.repositories,
+      },
     ],
     isLoading: [
       true,
@@ -36,36 +36,36 @@ const API_URL = "https://api.github.com";
       {
         [actions.setUsername]: () => true,
         [actions.setRepositories]: () => false,
-        [actions.setFetchError]: () => false
-      }
+        [actions.setFetchError]: () => false,
+      },
     ],
     error: [
       null,
       PropTypes.string,
       {
         [actions.setUsername]: () => null,
-        [actions.setFetchError]: (_, payload) => payload.message
-      }
-    ]
+        [actions.setFetchError]: (_, payload) => payload.message,
+      },
+    ],
   }),
 
   selectors: ({ selectors }) => ({
     sortedRepositories: [
       () => [selectors.repositories],
-      repositories =>
+      (repositories) =>
         repositories.sort((a, b) => b.stargazers_count - a.stargazers_count),
-      PropTypes.array
-    ]
+      PropTypes.array,
+    ],
   }),
 
-  start: function*() {
+  start: function* () {
     const { setUsername } = this.actions;
     const username = yield this.get("username");
     yield put(setUsername(username));
   },
 
   takeLatest: ({ actions, workers }) => ({
-    [actions.setUsername]: workers.fetchRepositories
+    [actions.setUsername]: workers.fetchRepositories,
   }),
 
   workers: {
@@ -85,8 +85,8 @@ const API_URL = "https://api.github.com";
         const json = yield response.json();
         yield put(setFetchError(json.message));
       }
-    }
-  }
+    },
+  },
 })
 class ExampleGithubScene extends Component {
   render() {
@@ -95,7 +95,7 @@ class ExampleGithubScene extends Component {
       isLoading,
       repositories,
       sortedRepositories,
-      error
+      error,
     } = this.props;
     const { setUsername } = this.actions;
 
@@ -106,7 +106,7 @@ class ExampleGithubScene extends Component {
           <input
             value={username}
             type="text"
-            onChange={e => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         {isLoading ? (
@@ -114,7 +114,7 @@ class ExampleGithubScene extends Component {
         ) : repositories.length > 0 ? (
           <div>
             Found {repositories.length} repositories for user {username}!
-            {sortedRepositories.map(repo => (
+            {sortedRepositories.map((repo) => (
               <div key={repo.id}>
                 <a href={repo.html_url} target="_blank">
                   {repo.full_name}

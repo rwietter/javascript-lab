@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
   type User {
@@ -30,27 +30,27 @@ const typeDefs = gql`
 const users = [
   {
     _id: String(Math.random()),
-    name: 'Fred',
-    email: 'fred@go.com',
+    name: "Fred",
+    email: "fred@go.com",
     active: true,
   },
   {
     _id: String(Math.random()),
-    name: 'Carl',
-    email: 'carl@go.com',
+    name: "Carl",
+    email: "carl@go.com",
     active: false,
   },
   {
     _id: String(Math.random()),
-    name: 'John',
-    email: 'jhon@go.com',
+    name: "John",
+    email: "jhon@go.com",
     active: true,
   },
 ];
 
 const resolvers = {
   Query: {
-    hello: () => 'Hello, world',
+    hello: () => "Hello, world",
     users: () => users,
     getUserByEmail: (_, args) => {
       return users.find((user) => user.email === args.email);

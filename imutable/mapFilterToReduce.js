@@ -1,15 +1,15 @@
 const students = [
   {
-    name: 'Victor',
-    city: 'Manaus',
+    name: "Victor",
+    city: "Manaus",
   },
   {
-    name: 'Clementine',
-    city: 'São Paulo',
+    name: "Clementine",
+    city: "São Paulo",
   },
   {
-    name: 'Patricia',
-    city: 'Rio do sul',
+    name: "Patricia",
+    city: "Rio do sul",
   },
 ];
 
@@ -27,6 +27,6 @@ const citiesMap = students.map((items) => {
 console.log(cities);
 
 const citiesFilter = students.filter((items) => {
-  return items.city === 'Rio do sul';
+  return items.city === "Rio do sul";
 });
 console.log(citiesFilter);

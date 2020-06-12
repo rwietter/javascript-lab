@@ -3,7 +3,7 @@
 // load dependency files into the global namespace, so that the
 // examples can run on node.
 
-module.exports = function(...args) {
+module.exports = function (...args) {
   for (let arg of args)
-    (1,eval)(require("fs").readFileSync(__dirname + "/../" + arg, "utf8"))
-}
+    (1, eval)(require("fs").readFileSync(__dirname + "/../" + arg, "utf8"));
+};

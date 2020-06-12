@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function readLine() {
   return inputString[currentLine++];

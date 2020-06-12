@@ -5,14 +5,14 @@ const addEntryEvents = (events, squirrel) => {
   journalJacques.push({ events, squirrel });
 };
 addEntryEvents(
-  ['work', 'touched tree', 'pizza', 'running', 'television'],
+  ["work", "touched tree", "pizza", "running", "television"],
   false
 );
 addEntryEvents(
-  ['work', 'ice cream', 'cauliflower', 'lasagna', 'touched tree'],
+  ["work", "ice cream", "cauliflower", "lasagna", "touched tree"],
   false
 );
-addEntryEvents(['weekend', 'cycling', 'break', 'peanuts', 'beer'], true);
+addEntryEvents(["weekend", "cycling", "break", "peanuts", "beer"], true);
 
 // fórmula φ
 const phi = (table) => {

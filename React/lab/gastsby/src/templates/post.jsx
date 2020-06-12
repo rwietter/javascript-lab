@@ -16,12 +16,12 @@ export default class Post extends Component {
             width: "100%",
             padding: "1.5rem",
             borderRadius: "0.50rem",
-            margin: "10px 15px"
+            margin: "10px 15px",
           }}
         >
           <h2 style={{ fontSize: "22px", fontWeight: "bold" }}>{title}</h2>
           <p>
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <Link
                 style={{ color: "#000", marginRight: "10px" }}
                 key={tag}

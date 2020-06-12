@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = new mongoose.Schema({
   title: {
@@ -11,9 +11,9 @@ const Schema = new mongoose.Schema({
   },
   author: {
     type: mongoose.Schema.Types.ObjectId, // _id que o mongo gera
-    ref: 'User',
+    ref: "User",
     required: true,
   },
 });
 
-export default mongoose.model('Post', Schema);
+export default mongoose.model("Post", Schema);

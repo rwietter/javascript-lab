@@ -26,11 +26,11 @@ export class Button extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      labelText: ""
+      labelText: "",
     };
   }
 
-  setLabelText = labelText => {
+  setLabelText = (labelText) => {
     this.setState({ labelText });
   };
 

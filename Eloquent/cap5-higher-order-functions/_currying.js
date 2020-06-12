@@ -22,7 +22,7 @@ console.log(curriedSum(2)(4)); // 6
 console.log(curriedSum(3, 3)); // 9
 
 // --------------
-console.log('\nCurried function:');
+console.log("\nCurried function:");
 
 function curry(func) {
   return function curried(...args) {
@@ -44,7 +44,7 @@ console.log(curriedMean(1, 2, 3));
 console.log(curriedMean(1, 2)(3));
 console.log(curriedMean(1)(2)(3));
 
-console.log('--------------------- Discount Curried ---------------------');
+console.log("--------------------- Discount Curried ---------------------");
 const getDiscount = (discount) => (price) => price * discount;
 const discount = getDiscount(0.5);
 console.log(discount(200));

@@ -1,9 +1,9 @@
 const carrinho = [
-  { name: 'Caneta', size: 10, price: 7.99 },
-  { name: 'Impressora', size: 0, price: 649.5 },
-  { name: 'Caderno', size: 4, price: 27.1 },
-  { name: 'Lapis', size: 3, price: 5.82 },
-  { name: 'esoura', size: 1, price: 19.2 },
+  { name: "Caneta", size: 10, price: 7.99 },
+  { name: "Impressora", size: 0, price: 649.5 },
+  { name: "Caderno", size: 4, price: 27.1 },
+  { name: "Lapis", size: 3, price: 5.82 },
+  { name: "esoura", size: 1, price: 19.2 },
 ];
 
 Array.prototype.filterray = function (isMaxZero) {

@@ -31,52 +31,52 @@ function getSeconds() {
 
 function getWeekToString(day) {
   const week = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   return week[day];
 }
 
 function getMonthToString(month) {
   const arr = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
   return arr[month];
 }
 
 (function setFormatDate() {
-  const getAtribute = document.getElementById('text');
+  const getAtribute = document.getElementById("text");
   getAtribute.innerHTML = `${getWeekToString(
-    getWeek(),
+    getWeek()
   )}, ${getDayNumber()} of ${getMonthToString(
-    getMonthNumber(),
+    getMonthNumber()
   )} of ${getDateFullYearNumber()} ${getHoursNumber()}:${getMinutesNumber()}:${getSeconds()}`;
 })();
 
 /* +----------------- Mode two -----------------+ */
 
-const section = document.querySelector('.background'); // get section element
+const section = document.querySelector(".background"); // get section element
 const dateFormat = date.toLocaleDateString(
-  'pt-BR',
-  (options = { dateStyle: 'full', timeStyle: 'medium' }),
+  "pt-BR",
+  (options = { dateStyle: "full", timeStyle: "medium" })
 ); // get date style formated
-const h1 = document.createElement('h1'); // create element h1 for insert section query
+const h1 = document.createElement("h1"); // create element h1 for insert section query
 h1.innerHTML = dateFormat.fontsize(5); // insert date formated to h1 element
 section.appendChild(h1); // section query push date formated to h1 new element
 

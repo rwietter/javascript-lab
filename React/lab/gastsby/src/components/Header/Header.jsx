@@ -13,7 +13,7 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <header className="header">
         <Link to="/">
           <h1 className="header-title">{data.site.siteMetadata.title}</h1>

@@ -8,11 +8,11 @@ const roads = [
   "Ernie's House-Grete's House",
   "Grete's House-Farm",
   "Grete's House-Shop",
-  'Marketplace-Farm',
-  'Marketplace-Post Office',
-  'Marketplace-Shop',
-  'Marketplace-Town Hall',
-  'Shop-Town Hall',
+  "Marketplace-Farm",
+  "Marketplace-Post Office",
+  "Marketplace-Shop",
+  "Marketplace-Town Hall",
+  "Shop-Town Hall",
 ];
 
 /* ----------- Create graph destination ----------- */
@@ -26,7 +26,7 @@ function buildGraph(edges) {
       graph[from].push(to);
     }
   }
-  for (let [from, to] of edges.map((r) => r.split('-'))) {
+  for (let [from, to] of edges.map((r) => r.split("-"))) {
     addEdge(from, to);
     addEdge(to, from);
   }
@@ -60,8 +60,8 @@ class VillaState {
   }
 }
 
-let first = new VillaState('Post Office', [
-  { place: 'Post Office', address: "Alice's House" },
+let first = new VillaState("Post Office", [
+  { place: "Post Office", address: "Alice's House" },
 ]);
 let next = first.move("Alice's House");
 
@@ -102,7 +102,7 @@ VillaState.random = function (parcelCount = 5) {
     } while (place == address);
     parcels.push({ place, address });
   }
-  return new VillaState('Post Office', parcels);
+  return new VillaState("Post Office", parcels);
 };
 
 runRobot(VillaState.random(), randomRobot);

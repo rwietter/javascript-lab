@@ -13,7 +13,7 @@ function BoilingVerdict(props) {
 
 const scaleNames = {
   c: "Celsius",
-  f: "Fahrenheit"
+  f: "Fahrenheit",
 };
 
 class TemperatureInput extends React.Component {

@@ -1,15 +1,15 @@
 function Chessboard(size) {
-  let board = ' ';
-  for (let i = 0; i < size; i++){
-    for (let j = 0; j < size; j++){
+  let board = " ";
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
       if ((i + j) % 2 === 0) {
-        board += ' ';
+        board += " ";
       } else {
-        board += '#';
+        board += "#";
       }
     }
-    board += '\n'
+    board += "\n";
   }
   console.log(board);
 }
-Chessboard(90)
+Chessboard(90);

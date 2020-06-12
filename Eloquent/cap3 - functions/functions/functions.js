@@ -9,7 +9,7 @@ console.log(getCalcSquare(5)); // 25
 // ---
 
 const makeNoise = function () {
-  console.log('Ping!');
+  console.log("Ping!");
 };
 makeNoise();
 

@@ -1,1 +1,7 @@
-{"componentChunkName":"component---src-templates-post-jsx","path":"/nosso-primeiro-post/","result":{"pageContext":{"slug":"/nosso-primeiro-post/","source":"posts"}}}
+{
+  "componentChunkName": "component---src-templates-post-jsx",
+  "path": "/nosso-primeiro-post/",
+  "result": {
+    "pageContext": { "slug": "/nosso-primeiro-post/", "source": "posts" }
+  }
+}

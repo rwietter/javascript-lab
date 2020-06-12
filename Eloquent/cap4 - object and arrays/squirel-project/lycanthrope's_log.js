@@ -2,7 +2,7 @@
 //  The lycanthrope’s log
 // ∞ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ∞
 
-let JOURNAL = require('./journal');
+let JOURNAL = require("./journal");
 
 function tableFor(event, journal) {
   let table = [0, 0, 0, 0];
@@ -16,7 +16,7 @@ function tableFor(event, journal) {
   return table;
 }
 
-tableFor('pizza', JOURNAL);
+tableFor("pizza", JOURNAL);
 
 const journalEvents = (journal) => {
   let events = [];
