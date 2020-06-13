@@ -1,0 +1,231 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "-SkX58ChsLp5Azms3lV4W",
+      "type": "ellipse",
+      "x": 1042.25,
+      "y": 261.4166717529297,
+      "width": 48,
+      "height": 48,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 786917860,
+      "points": []
+    },
+    {
+      "id": "Vs735_wcWuyzFrDnIfkTH",
+      "type": "arrow",
+      "x": 956.25,
+      "y": 293.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 847566179,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          73,
+          -4
+        ]
+      ]
+    },
+    {
+      "id": "nYNnrdW3n2-otEEAWhAvA",
+      "type": "text",
+      "x": 1058.25,
+      "y": 269.4166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1256201714,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "qm5RrutZp_bSFAHlSlcSe",
+      "type": "text",
+      "x": 405.25,
+      "y": -4.0833282470703125,
+      "width": 668,
+      "height": 233,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1295825055,
+      "points": [],
+      "text": "Esboce um diagrama de variáveis ​​e valores após a execução\ndeste trecho de código. Use nosso modelo mental.\n\nlet spaghetti = function() {\nreturn 2 + 2;\n};\nlet fettuccine = spaghetti;\nlet gnocchi = function() {\nreturn 2 + 2;\n};",
+      "font": "20px Cascadia",
+      "baseline": 229
+    },
+    {
+      "id": "BxjDwCTn03P4D_YqSu-Dn",
+      "type": "text",
+      "x": 814.25,
+      "y": 275.9166717529297,
+      "width": 127,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 650673126,
+      "points": [],
+      "text": "let spaghetti",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "X02Jnoc_CbgN-XiuurcOF",
+      "type": "text",
+      "x": 816.75,
+      "y": 340.4166717529297,
+      "width": 133,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1055098036,
+      "points": [],
+      "text": "let fettuccine",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "Y_g-Moh-CzFPCu48vrsxI",
+      "type": "text",
+      "x": 824.75,
+      "y": 407.4166717529297,
+      "width": 101,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1431920035,
+      "points": [],
+      "text": "let gnocchi",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "TV2VjfddZB9WRPUx480YP",
+      "type": "arrow",
+      "x": 954.25,
+      "y": 358.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 2138443642,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          84,
+          -58
+        ]
+      ]
+    },
+    {
+      "id": "QN4AvX8EKwxwfAza9Ioup",
+      "type": "ellipse",
+      "x": 1053.25,
+      "y": 388.4166717529297,
+      "width": 48,
+      "height": 48,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 788740219,
+      "points": []
+    },
+    {
+      "id": "A0WlJuxZM_ZYiWWlSzc1Y",
+      "type": "text",
+      "x": 1069.25,
+      "y": 396.4166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 349581973,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "upr5ltoJXYkeJnyN9SbPl",
+      "type": "arrow",
+      "x": 942.25,
+      "y": 425.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1447516106,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          98,
+          -4
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

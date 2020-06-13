@@ -1,0 +1,250 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "-SkX58ChsLp5Azms3lV4W",
+      "type": "ellipse",
+      "x": 925.25,
+      "y": 137.4166717529297,
+      "width": 48,
+      "height": 48,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 786917860,
+      "points": []
+    },
+    {
+      "id": "qm5RrutZp_bSFAHlSlcSe",
+      "type": "text",
+      "x": 383.25,
+      "y": -58.08332824707031,
+      "width": 668,
+      "height": 187,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1295825055,
+      "points": [],
+      "text": "Esboce um diagrama de variáveis ​​e valores após a execução\ndeste trecho de código. Use nosso modelo mental.\n\nlet ask = function() {\nreturn 2;\n};\nlet halves = ask();\nlet weeks = ask();",
+      "font": "20px Cascadia",
+      "baseline": 182
+    },
+    {
+      "id": "BxjDwCTn03P4D_YqSu-Dn",
+      "type": "text",
+      "x": 749.25,
+      "y": 150.9166717529297,
+      "width": 71,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 650673126,
+      "points": [],
+      "text": "let ask",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "X02Jnoc_CbgN-XiuurcOF",
+      "type": "text",
+      "x": 751.25,
+      "y": 194.4166717529297,
+      "width": 96,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1055098036,
+      "points": [],
+      "text": "let halves",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "Y_g-Moh-CzFPCu48vrsxI",
+      "type": "text",
+      "x": 755.25,
+      "y": 241.4166717529297,
+      "width": 92,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1431920035,
+      "points": [],
+      "text": "let weeks",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "Vs735_wcWuyzFrDnIfkTH",
+      "type": "arrow",
+      "x": 839.25,
+      "y": 169.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 847566179,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          73,
+          -4
+        ]
+      ]
+    },
+    {
+      "id": "SiQJ9V8a3uFU0_R6Ltu29",
+      "type": "text",
+      "x": 941.25,
+      "y": 145.4166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 2091644136,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "fMDUxv2LA8izre9Qu9zwV",
+      "type": "ellipse",
+      "x": 937.25,
+      "y": 211.4166717529297,
+      "width": 53,
+      "height": 53,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 679658584,
+      "points": []
+    },
+    {
+      "id": "n3tCBnWDL_OKolkE9jPoZ",
+      "type": "text",
+      "x": 958.75,
+      "y": 220.9166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1757190240,
+      "points": [],
+      "text": "2",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "tlfU_ZoFXohapi8ors9MQ",
+      "type": "arrow",
+      "x": 852.25,
+      "y": 212.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1776568572,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          87,
+          16
+        ]
+      ]
+    },
+    {
+      "id": "WEW6BEVKaX8AwM5tV5zss",
+      "type": "arrow",
+      "x": 857.25,
+      "y": 261.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1736041687,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          77,
+          -17
+        ]
+      ]
+    },
+    {
+      "id": "3fxcIk9OHmc48msx8n6tE",
+      "type": "text",
+      "x": 368.75,
+      "y": 322.4166717529297,
+      "width": 623,
+      "height": 64,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1719429338,
+      "points": [],
+      "text": "Ele mostra a variável ask apontando para um valor da função\ne as variáveis halves e weeks apontando para o valor 2.",
+      "font": "20px Virgil",
+      "baseline": 55
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

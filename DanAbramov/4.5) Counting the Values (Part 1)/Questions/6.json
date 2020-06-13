@@ -1,0 +1,310 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "-SkX58ChsLp5Azms3lV4W",
+      "type": "ellipse",
+      "x": 1042.25,
+      "y": 261.4166717529297,
+      "width": 48,
+      "height": 48,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 786917860,
+      "points": []
+    },
+    {
+      "id": "Vs735_wcWuyzFrDnIfkTH",
+      "type": "arrow",
+      "x": 956.25,
+      "y": 293.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 847566179,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          73,
+          -4
+        ]
+      ]
+    },
+    {
+      "id": "fMDUxv2LA8izre9Qu9zwV",
+      "type": "ellipse",
+      "x": 1045.25,
+      "y": 319.4166717529297,
+      "width": 53,
+      "height": 53,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 679658584,
+      "points": []
+    },
+    {
+      "id": "9mqk8a8yRvZ0eAqYyQSP8",
+      "type": "ellipse",
+      "x": 1044.75,
+      "y": 401.9166717529297,
+      "width": 82,
+      "height": 82,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1025906219,
+      "points": []
+    },
+    {
+      "id": "8xJJPlnUjitTkBakm7bxG",
+      "type": "arrow",
+      "x": 969.25,
+      "y": 360.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1411041359,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          64,
+          -3
+        ]
+      ]
+    },
+    {
+      "id": "qm5RrutZp_bSFAHlSlcSe",
+      "type": "text",
+      "x": 405.25,
+      "y": -16.083328247070312,
+      "width": 668,
+      "height": 257,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1295825055,
+      "points": [],
+      "text": "Esboce um diagrama de variáveis ​​e valores após a execução\ndeste trecho de código. Use nosso modelo mental.\n\nlet cook = function() {\nreturn 'tofu';\n};\nlet make = function() {\nreturn 'tofu';\n};\nlet food = cook();\nlet fuel = make();",
+      "font": "20px Cascadia",
+      "baseline": 252
+    },
+    {
+      "id": "BxjDwCTn03P4D_YqSu-Dn",
+      "type": "text",
+      "x": 862.25,
+      "y": 274.9166717529297,
+      "width": 79,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 650673126,
+      "points": [],
+      "text": "let cook",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "X02Jnoc_CbgN-XiuurcOF",
+      "type": "text",
+      "x": 874.25,
+      "y": 338.4166717529297,
+      "width": 84,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1055098036,
+      "points": [],
+      "text": "let make",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "Y_g-Moh-CzFPCu48vrsxI",
+      "type": "text",
+      "x": 883.75,
+      "y": 404.4166717529297,
+      "width": 81,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1431920035,
+      "points": [],
+      "text": "let food",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "ZEx1TPhpR7Ey1gkSRiIcw",
+      "type": "text",
+      "x": 892.75,
+      "y": 460.4166717529297,
+      "width": 73,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 2067259743,
+      "points": [],
+      "text": "let fuel",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "nYNnrdW3n2-otEEAWhAvA",
+      "type": "text",
+      "x": 1058.25,
+      "y": 269.4166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1256201714,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "KveFh905kYh20Qu-xApzU",
+      "type": "text",
+      "x": 1063.75,
+      "y": 329.9166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 214241833,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "csfzrst-jB8OwdrNLXFBD",
+      "type": "text",
+      "x": 1062.75,
+      "y": 429.4166717529297,
+      "width": 53,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1179371964,
+      "points": [],
+      "text": "'tofu'",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "JCiQxNAID2c8yhLq73N6k",
+      "type": "arrow",
+      "x": 973.25,
+      "y": 422.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 538985868,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          66,
+          14
+        ]
+      ]
+    },
+    {
+      "id": "PK4zGkKU7fvETB4VJtrlw",
+      "type": "arrow",
+      "x": 978.25,
+      "y": 482.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 245514460,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          63,
+          -34
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

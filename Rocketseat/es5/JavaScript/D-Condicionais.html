@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>jsRocketSeat</title>
+  </head>
+  <body>
+    <script>
+      function returnSexo(sexo) {
+        switch (sexo) {
+          case "M":
+            return "MasculinoCase";
+            break;
+          case "F":
+            return "FemininoCase";
+
+          default:
+            return "Outro";
+            break;
+        }
+        if (sexo === "M") {
+          return "Masculino";
+        } else if (sexo === "F") {
+          return "Feminino";
+        } else {
+          return "Resultado não encontrado";
+        }
+      }
+
+      console.log(`Sexo: ${returnSexo("F")}`);
+
+      console.log("----------- Tipos lógicos == ------------");
+
+      const returnIgualdadeValor = (num1, num2) => {
+        if (num1 == num2) {
+          return `Valores iguais: ${num1 == num2}`;
+        }
+        if (num1 != num2) {
+          return `Valores diferentes: ${num1 !== num2}`;
+        }
+      };
+      console.log(`\nIgualdade: ${returnIgualdadeValor(1, 2)}`);
+
+      console.log("----------- Tipos lógicos === ------------");
+
+      const returnIgualdadeTipo = (num1, num2) => {
+        if (num1 === num2) {
+          return `Valores ou Tipos iguais: ${num1 === num2}`;
+        }
+        if (num1 !== num2) {
+          return `Valores ou tipos diferentes: ${num1 !== num2}`;
+        }
+      };
+      console.log(`\nIgualdade: ${returnIgualdadeTipo(1, 1)}`);
+    </script>
+  </body>
+</html>

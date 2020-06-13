@@ -1,0 +1,152 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "qm5RrutZp_bSFAHlSlcSe",
+      "type": "text",
+      "x": 399.25,
+      "y": 36.91667175292969,
+      "width": 668,
+      "height": 163,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1295825055,
+      "points": [],
+      "text": "Esboce um diagrama de variáveis ​​e valores após a execução\ndeste trecho de código. Use nosso modelo mental.\n\nlet banana = function() {\nreturn 2 + 2;\n};\nlet result = banana;",
+      "font": "20px Cascadia",
+      "baseline": 159
+    },
+    {
+      "id": "BxjDwCTn03P4D_YqSu-Dn",
+      "type": "text",
+      "x": 748.75,
+      "y": 145.9166717529297,
+      "width": 106,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 650673126,
+      "points": [],
+      "text": "let banana",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "-SkX58ChsLp5Azms3lV4W",
+      "type": "ellipse",
+      "x": 925.25,
+      "y": 137.4166717529297,
+      "width": 48,
+      "height": 48,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 786917860,
+      "points": []
+    },
+    {
+      "id": "X02Jnoc_CbgN-XiuurcOF",
+      "type": "text",
+      "x": 752.75,
+      "y": 194.4166717529297,
+      "width": 93,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1055098036,
+      "points": [],
+      "text": "let result",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "MSo6BMV63CWn7m-dGgseg",
+      "type": "arrow",
+      "x": 849.25,
+      "y": 210.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 1513854110,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          68,
+          -27
+        ]
+      ]
+    },
+    {
+      "id": "7jkjJwUTCNNTDfPqFA-CK",
+      "type": "arrow",
+      "x": 864.25,
+      "y": 163.4166717529297,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "seed": 359799083,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          52,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "SiQJ9V8a3uFU0_R6Ltu29",
+      "type": "text",
+      "x": 941.25,
+      "y": 145.4166717529297,
+      "width": 16,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 2091644136,
+      "points": [],
+      "text": "()",
+      "font": "20px Virgil",
+      "baseline": 23
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

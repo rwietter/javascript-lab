@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", "https://gist.github.com/euiciowr");
+      var textElement = document.createTextNode("Acessar gist");
+      linkElement.appendChild(textElement); // textElement vai ser um filho de linkElement
+      var containerElement = document.querySelector("#app");
+      containerElement.appendChild(linkElement);
+    </script>
+  </body>
+</html>

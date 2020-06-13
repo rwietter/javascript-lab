@@ -1,0 +1,231 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "MQNL4AcC732-yEUnO2lx-",
+      "type": "ellipse",
+      "x": 804,
+      "y": 151,
+      "width": 59,
+      "height": 56,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1192770388,
+      "points": []
+    },
+    {
+      "id": "-I2VTnJWKNWRBEzhJr0eJ",
+      "type": "ellipse",
+      "x": 811,
+      "y": 256,
+      "width": 66,
+      "height": 63,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 227795971,
+      "points": []
+    },
+    {
+      "id": "_qisVxeU1cWKftayndIlo",
+      "type": "text",
+      "x": 623,
+      "y": 221,
+      "width": 82,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 237421579,
+      "points": [],
+      "text": "let peas",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "SEEAX0somuFg0766otlTF",
+      "type": "text",
+      "x": 620.5,
+      "y": 275,
+      "width": 87,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1456459577,
+      "points": [],
+      "text": "ler knees",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "xN8Nn3ezFBygDlgB28JSq",
+      "type": "text",
+      "x": 823,
+      "y": 163,
+      "width": 21,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1344183686,
+      "points": [],
+      "text": "{}",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "6D6BRByw7HGtBQfKkCyvq",
+      "type": "arrow",
+      "x": 709.25,
+      "y": 181.75,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1170155918,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          88,
+          -5
+        ]
+      ]
+    },
+    {
+      "id": "cbCpyaIAXTBKrrklHmnta",
+      "type": "arrow",
+      "x": 712.25,
+      "y": 242.75,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 230959253,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          98,
+          -43
+        ]
+      ]
+    },
+    {
+      "id": "JF7Q_UzCizXd2-hDyqY0_",
+      "type": "arrow",
+      "x": 721.25,
+      "y": 296.75,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 1751117226,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          75,
+          -9
+        ]
+      ]
+    },
+    {
+      "id": "1KeQxliB8cOlCSNNe7B6L",
+      "type": "text",
+      "x": 833.5,
+      "y": 271.5,
+      "width": 21,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 494247379,
+      "points": [],
+      "text": "{}",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "TTTyZIWxeISbuOeEPep5l",
+      "type": "text",
+      "x": 623,
+      "y": 158,
+      "width": 80,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2010089239,
+      "points": [],
+      "text": "let bees",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "aaKg6ENN5tDawLjhVKKXb",
+      "type": "text",
+      "x": 411.75,
+      "y": 77.91667175292969,
+      "width": 668,
+      "height": 140,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 2,
+      "opacity": 100,
+      "seed": 264683174,
+      "points": [],
+      "text": "Esboce um diagrama de variáveis ​​e valores após a\nexecução deste trecho de código. Use nosso modelo mental.\n\nlet bees = {};\nlet peas = bees;\nlet knees = {};",
+      "font": "20px Cascadia",
+      "baseline": 135
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

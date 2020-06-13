@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" , name="none" id="nome" class="classe" />
+      <button class="btn">Adicionar</button>
+    </div>
+    <script>
+      var inputElement = document.getElementById("nome"); // id é único
+      var inputElement = document.getElementsByTagName("input"); // retorna um array
+      var inputElement = document.getElementsByClassName("classe"); // retorna um array
+      var inputElement = document.querySelector("body div#app input"); // querySelector deixa percorrer a DOM
+
+      // manipulação da dom com JavaScript pegando o onclick e input do usuário
+      var inputElement = document.querySelector("input[id=nome"); // querySelector pega a partir do atributo
+      console.log(inputElement);
+      var btnInput = document.querySelector("button.btn");
+
+      btnInput.onclick = () => {
+        var text = inputElement.value;
+        alert(text);
+      };
+    </script>
+  </body>
+</html>

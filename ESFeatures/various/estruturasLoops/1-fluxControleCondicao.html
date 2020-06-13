@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const theNumber = Number(prompt("Enter number", ""));
+      if (!isNaN(theNumber)) {
+        document.write("O valor se output é " + theNumber * theNumber);
+      } else {
+        document.write("This value is invalid");
+      }
+
+      document.write("<br/>");
+
+      if (theNumber < 10) {
+        document.write("the number is < 10");
+      } else if (theNumber <= 100) {
+        document.write("the number is <= 100");
+      } else {
+        document.write("the number is > 100");
+      }
+    </script>
+  </body>
+</html>

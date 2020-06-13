@@ -1,0 +1,212 @@
+{
+  "type": "excalidraw",
+  "version": 1,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "MQNL4AcC732-yEUnO2lx-",
+      "type": "ellipse",
+      "x": 804,
+      "y": 151,
+      "width": 59,
+      "height": 56,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1192770388,
+      "points": []
+    },
+    {
+      "id": "-I2VTnJWKNWRBEzhJr0eJ",
+      "type": "ellipse",
+      "x": 804,
+      "y": 219,
+      "width": 66,
+      "height": 63,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 227795971,
+      "points": []
+    },
+    {
+      "id": "gyaXsQ80zRlOeF5sGdJ0c",
+      "type": "text",
+      "x": 829.5,
+      "y": 163,
+      "width": 8,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1700582421,
+      "points": [],
+      "text": "7",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "gEUzVDUIDMppPXBeJkUD3",
+      "type": "text",
+      "x": 827.5,
+      "y": 234.5,
+      "width": 19,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1952398515,
+      "points": [],
+      "text": "'7'",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "TTTyZIWxeISbuOeEPep5l",
+      "type": "text",
+      "x": 605,
+      "y": 158,
+      "width": 116,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 2010089239,
+      "points": [],
+      "text": "let dwarves",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "lnINof76MvLAPhsklnPZ7",
+      "type": "arrow",
+      "x": 722,
+      "y": 175,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 755545908,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          80,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "_qisVxeU1cWKftayndIlo",
+      "type": "text",
+      "x": 597.5,
+      "y": 221,
+      "width": 133,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 237421579,
+      "points": [],
+      "text": "let continents",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "7FDflHas8EhUsG7wTl6z7",
+      "type": "arrow",
+      "x": 744,
+      "y": 242,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 645010053,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          58,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "SEEAX0somuFg0766otlTF",
+      "type": "text",
+      "x": 598.5,
+      "y": 324,
+      "width": 159,
+      "height": 32,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 1456459577,
+      "points": [],
+      "text": "ler wordWonders",
+      "font": "20px Virgil",
+      "baseline": 23
+    },
+    {
+      "id": "6IlmJ3FFPKktK8e18OhRQ",
+      "type": "arrow",
+      "x": 763.25,
+      "y": 341.75,
+      "width": 0,
+      "height": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "roughness": 1,
+      "opacity": 100,
+      "seed": 583985250,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          45,
+          -138
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
