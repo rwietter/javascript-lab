@@ -1,9 +1,0 @@
-{
-  "task": "hello-real-world",
-  "stack": {
-    "type": "nodejs",
-    "version": "10"
-  },
-  "configSource": "env",
-  "template": "nodejs"
-}
