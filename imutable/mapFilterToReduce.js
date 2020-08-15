@@ -1,4 +1,4 @@
-const students = [
+const students = [g
   {
     name: "Victor",
     city: "Manaus",

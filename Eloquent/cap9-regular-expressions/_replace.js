@@ -3,10 +3,11 @@ console.log("papa".replace("p", "m"));
 
 let message = "Sun".replace(/[un]/g, "ol"); // with /g replace global characters
 console.log(message);
+const hello = "dddd";
 
 /* --------------------- Stock ----------------- */
 /* --------------------------------------------- */
-let stock = "1 lemon, 2 cabbages, and 101 eggs";
+const stock = "1 lemon, 2 cabbages, and 101 eggs";
 function minusOne(math, amount, unit) {
   amount = Number(amount) - 1;
   if (amount === 1) {
