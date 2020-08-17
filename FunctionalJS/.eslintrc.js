@@ -36,13 +36,15 @@ module.exports = {
   rules: {
     'sonarjs/cognitive-complexity': 'error',
     'sonarjs/no-identical-expressions': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
+    radix: 'error',
+    'no-self-compare': 'error',
     'implicit-arrow-linebreak': ['error', 'beside'],
     'no-compare-neg-zero': 'error',
     'no-dupe-else-if': 'error',
     'no-irregular-whitespace': ['error', { skipTemplates: true }],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    complexity: ['error', { max: 2 }],
     eqeqeq: ['error', 'always'],
     'max-len': [
       'error',
@@ -119,9 +121,9 @@ module.exports = {
       },
     ],
     complexity: [
-      'error',
+      'warn',
       {
-        max: 2,
+        max: 3,
       },
     ],
     treatUndefinedAsUnspecified: 'off',
