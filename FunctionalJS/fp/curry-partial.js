@@ -35,10 +35,10 @@ const card = [
 ];
 
 const sum = (card, names) => {
-  const products = card.filter((el, idx, arr) => el.name === names);
+  const products = card.filter((el) => el.name === names);
   return (value) => {
     return products.reduce((acc, cur) => {
-      return (acc = cur.price * value);
+      acc = cur.price * value;
     }, 0);
   };
 };
@@ -53,10 +53,3 @@ const add = (x, y) => x + y;
 const addFive = partialApplication(add, 5);
 const result = [1, 7, 3].map(addFive);
 console.log(result); // [6, 12, 8]
-
-// --------------------- Basic composition ---------------------
-const increment = (x) => x + x;
-const double = (k) => k * k;
-
-const data = increment(double(2));
-console.log(data);

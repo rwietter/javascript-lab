@@ -1,3 +1,11 @@
+// --------------------- Basic composition ---------------------
+const increment = (x) => x + x;
+const double = (k) => k * k;
+
+const data = increment(double(2));
+console.log(data);
+
+// --------------------- composition ---------------------
 const isEven = (x) => x % 2 === 0;
 const filterOutOdd = (collection) => collection.filter(isEven);
 
@@ -10,14 +18,3 @@ const sumEven = (collection) => compose(sum, filterOutOdd)(collection);
 const data = sumEven([1, 2, 3, 4]);
 
 console.log('data => ', data);
-
-// ------------------ Using rest operator ---------------------------
-const composition = (...fns) => (input) =>
-  fns.reduceRight((mem, fn) => fn(mem), input);
-
-const double = (x) => x * 2;
-const addOne = (x) => x + 1;
-const square = (x) => x * x;
-
-const result = composition(addOne, double, square)(2);
-console.log(result);
