@@ -18,11 +18,13 @@ const readFilesPaths = (pathName) => {
 };
 
 // filter files end with .srt extension
-const filterFilesEndExtension = (filesPath, pattern) => {
+
+const filterFilesEndExtension = (pattern) => (filesPath) => {
   return filesPath.filter((filePath) => filePath.endsWith(pattern));
 };
 
 // transform all files into unique file with strings
+
 const joinFilesIntoUniqueFile = (filePath) => {
   return new Promise((resolve, reject) => {
     try {
@@ -46,7 +48,7 @@ const removeUnnecessaryLines = (fileText) => {
   return fileText.filter((text) => text.trim());
 };
 
-const removePatternOfText = (fileText, pattern) => {
+const removePatternOfText = (pattern) => (fileText) => {
   return fileText.filter((text) => !text.includes(pattern));
 };
 
@@ -57,6 +59,36 @@ const removePatternOfTextThatContainNumbers = (fileText) => {
   });
 };
 
+const breakLines = (fileText) => fileText.join('\n').split('\n');
+
+const arrToStr = (arr) => arr.toString();
+
+const splitBadCharacters = (char) => (arr) => {
+  const str = arrToStr(arr);
+  return str.replace(/[^\w|ç|<i>|?|!|']/g, ' ').split(char);
+};
+
+const textToWords = (arr) => arrToStr(arr).split(' ');
+
+const countUseWords = (arr) => {
+  return Object.values(
+    arr.reduce((acc, el) => {
+      const word = el.toLowerCase();
+      const repeatedWord = acc[word] ? acc[word].repeatedWord + 1 : 1;
+      acc[word] = { word, repeatedWord };
+      return acc;
+    }, {})
+  );
+};
+
+const sorting = (attr) => (type = 'asc') => (arr) => {
+  const order = {
+    asc: (a, b) => b[attr] - a[attr],
+    desc: (a, b) => a[attr] - b[attr],
+  };
+  return arr.sort(order[type]);
+};
+
 module.exports = {
   readFilesPaths,
   createCompleteFilePath,
@@ -65,4 +97,9 @@ module.exports = {
   removeUnnecessaryLines,
   removePatternOfText,
   removePatternOfTextThatContainNumbers,
+  breakLines,
+  splitBadCharacters,
+  textToWords,
+  countUseWords,
+  sorting,
 };

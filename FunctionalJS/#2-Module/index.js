@@ -1,5 +1,6 @@
 const path = require('path');
 
+const { log } = require('console');
 const {
   readFilesPaths,
   createCompleteFilePath,
@@ -8,17 +9,36 @@ const {
   removeUnnecessaryLines,
   removePatternOfText,
   removePatternOfTextThatContainNumbers,
+  breakLines,
+  splitBadCharacters,
+  textToWords,
+  countUseWords,
+  sorting,
 } = require('./utils');
 
 const pathName = path.join(__dirname, 'legendas');
 const filePaths = readFilesPaths(pathName);
 
+/* -------------------------------------------- */
+/* passed not implicit parameter to reference function
+/* -------------------------------------------- */
+
+const joinCharacters = (arr) => arr.join(' ');
+
 filePaths
-  .then((shortFilePaths) => createCompleteFilePath(shortFilePaths))
-  .then((filesPaths) => filterFilesEndExtension(filesPaths, '.srt'))
-  .then((completeFilePaths) => filesIntoUniqueFile(completeFilePaths))
-  .then((fileText) => fileText.join('\n').split('\n'))
+  .then(createCompleteFilePath)
+  .then(filterFilesEndExtension('.srt'))
+  .then(filesIntoUniqueFile)
+  .then(breakLines)
   .then(removeUnnecessaryLines)
-  .then((fileText) => removePatternOfText(fileText, '-->'))
+  .then(removePatternOfText('-->'))
   .then(removePatternOfTextThatContainNumbers)
+  .then(splitBadCharacters('<i>'))
+  .then(splitBadCharacters('i>'))
+  .then(splitBadCharacters('<'))
+  .then(joinCharacters)
+  .then(textToWords)
+  .then(removeUnnecessaryLines)
+  .then(countUseWords)
+  .then(sorting('repeatedWord')('asc'))
   .then(console.log);

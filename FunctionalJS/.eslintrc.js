@@ -45,7 +45,7 @@ module.exports = {
 
     // 'implicit-arrow-linebreak': ['error', 'beside'],
 
-    'operator-linebreak': [2, 'before', { overrides: { '?': 'after' } }],
+    'operator-linebreak': [2, 'before'],
     'no-compare-neg-zero': 'error',
     'no-dupe-else-if': 'error',
     'no-irregular-whitespace': ['error', { skipTemplates: true }],
@@ -53,7 +53,9 @@ module.exports = {
     'block-scoped-var': 'error',
     eqeqeq: ['error', 'always'],
     'max-len': ['error', { code: 80, tabWidth: 2 }],
-    'no-confusing-arrow': ['error', { allowParens: false }],
+
+    // 'no-confusing-arrow': ['warn', { allowParens: true }],
+
     'no-mixed-operators': 'error',
     'no-tabs': ['error', { allowIndentationTabs: true }],
     'no-unexpected-multiline': 'error',
