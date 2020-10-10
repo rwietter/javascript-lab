@@ -89,6 +89,17 @@ const sorting = (attr) => (type = 'asc') => (arr) => {
   return arr.sort(order[type]);
 };
 
+const joinCharacters = (arr) => arr.join(' ');
+
+const compose = (...fns) => (file) => {
+return fns.reduce(async (acc, fn) => {
+  if (Promise.resolve(acc) === acc) {
+    return fn(await acc);
+  }
+  return fn(acc);
+}, file);
+};
+
 module.exports = {
   readFilesPaths,
   createCompleteFilePath,
@@ -100,6 +111,8 @@ module.exports = {
   breakLines,
   splitBadCharacters,
   textToWords,
+  joinCharacters,
   countUseWords,
   sorting,
+  compose,
 };

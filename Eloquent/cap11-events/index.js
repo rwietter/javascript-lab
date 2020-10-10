@@ -111,3 +111,5 @@ for (let field of Array.from(fields)) {
 /*
   Quando uma página termina de carregar, o "load"evento é disparado na janela e nos objetos do corpo do documento. Isso geralmente é usado para agendar ações de inicialização que requerem que todo o documento tenha sido criado.
 */
+
+// ----------------------- Eventos e loop de eventos -----------------------------------------------

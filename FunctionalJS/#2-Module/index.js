@@ -1,6 +1,5 @@
 const path = require('path');
 
-const { log } = require('console');
 const {
   readFilesPaths,
   createCompleteFilePath,
@@ -13,18 +12,35 @@ const {
   splitBadCharacters,
   textToWords,
   countUseWords,
+  joinCharacters,
   sorting,
+  compose,
 } = require('./utils');
 
 const pathName = path.join(__dirname, 'legendas');
+
+compose(
+  readFilesPaths,
+  createCompleteFilePath,
+  filterFilesEndExtension('.srt'),
+  filesIntoUniqueFile,
+  breakLines,
+  removeUnnecessaryLines,
+  removePatternOfText('-->'),
+  removePatternOfTextThatContainNumbers,
+  splitBadCharacters('<i>'),
+  splitBadCharacters('i>'),
+  splitBadCharacters('<'),
+  joinCharacters,
+  textToWords,
+  removeUnnecessaryLines,
+  countUseWords,
+  sorting('repeatedWord')('asc'),
+  console.log
+)(pathName);
+
+/*
 const filePaths = readFilesPaths(pathName);
-
-/* -------------------------------------------- */
-/* passed not implicit parameter to reference function
-/* -------------------------------------------- */
-
-const joinCharacters = (arr) => arr.join(' ');
-
 filePaths
   .then(createCompleteFilePath)
   .then(filterFilesEndExtension('.srt'))
@@ -42,3 +58,4 @@ filePaths
   .then(countUseWords)
   .then(sorting('repeatedWord')('asc'))
   .then(console.log);
+*/
